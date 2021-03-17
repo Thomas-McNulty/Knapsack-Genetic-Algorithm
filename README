@@ -1,0 +1,25 @@
+COMP131 Assignment 3: The Knapsack Problem
+Author: Thomas McNulty
+Date: 23 March 2021
+
+1. Each individual has the same physical backpack, but chooses different boxes.
+The fitness function could evaluate individuals based on the sum of the
+importance values of the boxes. However, if then weight exceeds 250 the fitness 
+could go to 0.
+
+2. The genome could be an array from 0 to n boxes. The boxes amount of boxes
+and importance of the boxes could be specified by the user in input, and
+stored in a dictionary for reference when creating individuals.
+
+3. 
+Mutation: change a random index in the array from 0 to 1 or 1 to 0
+
+Mutli-Point mutation: run mutation a random amount of times,
+keeping track of indices that were used previously
+
+One-Point Crossover: Set the values after a random index in one
+individuals array to the values in another, the same for the other
+individual. 
+
+Multi-Point Crossover: Perform One-Point Crossover multiple times,
+keeping track of previously used indices.
